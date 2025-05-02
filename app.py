@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # Load the model ONCE
-model = load_model("models/pneu_cnn_model.h5")
+model = load_model("models/pneumonia.h5")
 
 @app.route("/pneumoniapredict", methods=['POST'])
 def pneumoniapredict():
